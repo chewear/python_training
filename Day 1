@@ -1,0 +1,23 @@
+Python 
+- released 1991
+- started as an academic research
+- Guido van Rossum
+- research and scripting
+- dynamic scripting language
+- interpreted
+- JIT -> caching
+- space oriented language
+- OS agnostic
+- can be functional/ procedural/ OOP language 
+- REPL - read, evaluate, print, look
+
+Ai, Big Data, and Machine Learning (Python)
+- hosting large libraries with foundation to these topics
+
+Application Layers
+
+Controller
+Business Layer (bll) -> instructs the dal 
+Data Layer (dal) -> actual processing of data
+domain (model)
+utils
