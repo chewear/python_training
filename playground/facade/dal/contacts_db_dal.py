@@ -4,7 +4,7 @@ def get_db_connection():
     return sqlite3.connect("address_book.db")
 
 def retrieve_contacts():
-    sql = "select name, contact from contacts"
+    sql = "select name, contact_number from contacts"
     cnn = get_db_connection()
     cursor = cnn.execute(sql)
     result = {
