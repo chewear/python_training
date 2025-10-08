@@ -47,4 +47,21 @@ ReST
 -> Data format agnostic
 -> JSON, XML. images, binary files, etc.
 -> OpenAPI Specification (optional)
--> Http Web Methods (Get, Post, Put, Patch, Delete)
+-> Http Web Methods (Get, Post, Put, Patch, Delete, Options)
+
+Decorator Pattern
+
+- Add new functionality by adding a decorator
+
+Get
+
+- Header
+- Query Parameters
+- Path Parametes
+
+Post
+
+- Header
+- Query Parameters
+- Path Parametes
+- Request Body
