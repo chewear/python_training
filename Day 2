@@ -1,0 +1,40 @@
+Balance theory and application
+
+OOP
+
+Why use OOP?
+
+- for us to focus on designing the code into business objects that represents a particular function that can have traits that can be represented as attributes and methods.
+- to be able to morph from 1 object to another
+- able to efficiently secure and hide information
+
+Encapsulation
+
+- grouping the functionality into a single object
+- single responsibility pattern
+- information hiding
+- access modifiers(public, private, protected, default)
+
+Constructor
+
+- lesser memory usage
+- faster execution
+
+Why use Enheritance?
+
+- if you want to
+
+Abstraction
+
+- lets a class reuse code from another class
+- to create the blueprint of the applications
+- Strategy 1: If you have one property that will have different implementation
+- Strategy 2: What is common in the functionality
+
+Polymorphism
+
+- ability of a method to become to take other form or implementation
+
+Factory Pattern
+
+- deals with object instansiation

@@ -1,0 +1,50 @@
+Python Virtual Environment
+
+- The runtime is sitting within the OS
+  -> There will be a conflict apps that used same library but with different version
+
+- python -m venv venv
+
+1990s
+
+- [inter].net boom
+- html
+- dynamic
+- cgi (common gateway interface) [perl/python]
+- jsp / asp / php
+- applets (java)
+
+2000s
+
+- flash
+- RIA (Rich Internet Application)
+
+2010
+
+- Jquery
+- HTML5
+- spring
+- MVC
+
+2020
+
+- Angular
+- Ext JS
+- React
+- Vue
+- Bootstrap
+- API First -> Microservices
+- App
+
+Two Types of API
+
+SOAP
+-> xml based
+-> POST
+-> using XML Payload | SOAP Envelope
+
+ReST
+-> Data format agnostic
+-> JSON, XML. images, binary files, etc.
+-> OpenAPI Specification (optional)
+-> Http Web Methods (Get, Post, Put, Patch, Delete)
