@@ -1,22 +1,25 @@
-import sqlite3
+from dal.db_dal import DbDaoABC
+from dal.abstract_contacts import ContactsABC
 
-def get_db_connection():
-    return sqlite3.connect("address_book.db")
+class ContactsDbDao(DbDaoABC, ContactsABC):
 
-def retrieve_contacts():
-    sql = "select name, contact_number from contacts"
-    cnn = get_db_connection()
-    cursor = cnn.execute(sql)
-    result = {
-        "contacts": []
-    }
+    def retrieve_contacts(self):
+        sql = "select name, contact_number from contacts"
+        result = {
+            "contacts": []
+        }
+            
+        for row in self.execute_select(sql):
+            result.get("contacts").append({
+                "name" : row[0],
+                "contact_number" : row[1]
+            })
+            
+        return result
+
+    def search_contact(self, keyword):
+        raise Exception("Not Implemented")
         
-    for row in cursor:
-        result.get("contacts").append({
-            "name" : row[0],
-            "contact_number" : row[1]
-        })
-        
-    return result
+
         
         
