@@ -1,0 +1,15 @@
+Segeration of Duties
+
+- The ones that are implementing are not the ones approving the change
+
+Singleton Pattern
+
+- Create only one instance even with multiple instansiation
+
+Python Virtual Variables
+
+\*args
+→ variable number of positional arguments (tuple)
+
+\*\*kwargs
+→ variable number of keyword arguments (dict)

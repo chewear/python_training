@@ -1,0 +1,567 @@
+2025-10-09 15:26:51,538 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: 	 retrieve_rates
+2025-10-09 15:26:51,538 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function 	 retrieve_rates
+2025-10-09 15:27:45,457 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 15:27:45,457 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'usd', 'target': 'php', 'amount_to_be_converted': 1.0}]
+2025-10-09 15:27:45,458 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 15:31:17,952 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 15:31:17,952 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'asd', 'target': 'php', 'amount_to_be_converted': 1.0}]
+2025-10-09 15:31:17,953 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 15:36:11,809 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 15:36:11,809 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'USD', 'target': 'php', 'amount_to_be_converted': 1.0}]
+2025-10-09 15:36:11,809 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 15:36:11,809 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7ad9e04234a0>, 'USD', 'php', 1.0)] - [{}]
+2025-10-09 15:36:11,809 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert_amount
+2025-10-09 15:36:11,809 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 15:41:03,934 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 15:41:03,934 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'usd', 'target': 'php', 'amount_to_be_converted': -1.0}]
+2025-10-09 15:41:03,934 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 15:41:03,934 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x750d945e80e0>, 'usd', 'php', -1.0)] - [{}]
+2025-10-09 15:41:03,934 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert_amount
+2025-10-09 15:41:03,934 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 15:42:27,323 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 15:42:27,323 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'usd', 'target': 'php', 'amount_to_be_converted': 123.0}]
+2025-10-09 15:42:27,323 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 15:42:27,323 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x750d945e80e0>, 'usd', 'php', 123.0)] - [{}]
+2025-10-09 15:42:27,324 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert_amount
+2025-10-09 15:42:27,324 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 15:48:43,760 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 15:48:43,760 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'usd'}]
+2025-10-09 15:48:43,761 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 15:48:43,761 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x70082d920b60>, 'usd')] - [{}]
+2025-10-09 15:48:43,761 - my_app - ERROR 	 logger.py 	 wrapper 	 28  'dict' object has no attribute 'rates'
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 17, in get_rates_data
+    rates = rates_model.rates
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'rates'
+2025-10-09 15:48:43,762 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 15:49:46,493 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 15:49:46,494 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'php'}]
+2025-10-09 15:49:46,494 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 15:49:46,494 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x70082d920b60>, 'php')] - [{}]
+2025-10-09 15:49:46,494 - my_app - ERROR 	 logger.py 	 wrapper 	 28  'dict' object has no attribute 'rates'
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 17, in get_rates_data
+    rates = rates_model.rates
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'rates'
+2025-10-09 15:49:46,496 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 15:58:14,077 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 15:58:14,077 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'php'}]
+2025-10-09 15:58:14,078 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 15:58:14,078 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7f3ba74cbd40>, 'php')] - [{}]
+2025-10-09 15:58:14,078 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency 'php' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 19, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency 'php' not found in available rates
+2025-10-09 15:58:14,080 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 15:58:30,198 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 15:58:30,198 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'PHP'}]
+2025-10-09 15:58:30,198 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 15:58:30,199 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7f3ba74cbd40>, 'PHP')] - [{}]
+2025-10-09 15:58:30,199 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: get_rates_data
+2025-10-09 15:58:30,199 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 15:58:36,941 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 15:58:36,942 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'USD'}]
+2025-10-09 15:58:36,942 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 15:58:36,942 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7f3ba74cbd40>, 'USD')] - [{}]
+2025-10-09 15:58:36,942 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: get_rates_data
+2025-10-09 15:58:36,942 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 15:58:49,545 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 15:58:49,545 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'PHP'}]
+2025-10-09 15:58:49,546 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 15:58:49,547 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7f3ba74cbd40>, 'PHP')] - [{}]
+2025-10-09 15:58:49,548 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: get_rates_data
+2025-10-09 15:58:49,548 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 15:58:56,952 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 15:58:56,952 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'CND'}]
+2025-10-09 15:58:56,953 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 15:58:56,953 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7f3ba74cbd40>, 'CND')] - [{}]
+2025-10-09 15:58:56,953 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: get_rates_data
+2025-10-09 15:58:56,953 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 15:59:59,072 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 15:59:59,073 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'php'}]
+2025-10-09 15:59:59,073 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 15:59:59,074 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x782dc6b2b2f0>, 'php')] - [{}]
+2025-10-09 15:59:59,074 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency 'php' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 19, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency 'php' not found in available rates
+2025-10-09 15:59:59,076 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:00:24,173 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:00:24,174 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'php'}]
+2025-10-09 16:00:24,174 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:00:24,176 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x78ad2a2cb410>, 'php')] - [{}]
+2025-10-09 16:00:24,177 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: get_rates_data
+2025-10-09 16:00:24,177 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:00:51,791 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:00:51,792 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': '213'}]
+2025-10-09 16:00:51,793 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:00:51,794 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x78ad2a2cb410>, '213')] - [{}]
+2025-10-09 16:00:51,794 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency '213' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 21, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency '213' not found in available rates
+2025-10-09 16:00:51,795 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:01:17,897 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:01:17,899 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': '123131'}]
+2025-10-09 16:01:17,899 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:01:17,899 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x78ad2a2cb410>, '123131')] - [{}]
+2025-10-09 16:01:17,899 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency '123131' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 21, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency '123131' not found in available rates
+2025-10-09 16:01:17,900 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:04:51,484 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:04:51,485 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'php'}]
+2025-10-09 16:04:51,485 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:04:51,486 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x733e843c3b00>, 'php')] - [{}]
+2025-10-09 16:04:51,486 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: get_rates_data
+2025-10-09 16:04:51,486 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:05:16,238 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:05:16,238 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'ffphp'}]
+2025-10-09 16:05:16,238 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:05:16,238 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x733e843c3b00>, 'ffphp')] - [{}]
+2025-10-09 16:05:16,238 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency 'FFPHP' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 21, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency 'FFPHP' not found in available rates
+2025-10-09 16:05:16,241 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:10:55,858 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:10:55,858 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'usd'}]
+2025-10-09 16:10:55,858 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:10:55,858 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7e297a8f4350>, 'usd')] - [{}]
+2025-10-09 16:10:55,858 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: get_rates_data
+2025-10-09 16:10:55,859 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:13:07,560 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:13:07,561 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'asda', 'target': 'asd', 'amount_to_be_converted': 1.0}]
+2025-10-09 16:13:07,562 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:13:07,562 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b0509986150>, 'asda', 'asd', 1.0)] - [{}]
+2025-10-09 16:13:07,562 - my_app - ERROR 	 logger.py 	 wrapper 	 28  [Error] Invalid currency: ASDA
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 46, in convert_amount
+    source_rate = get_rate(source)
+                  ^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/dal/rates_dal.py", line 15, in get_currency_rate
+    raise Exception(f"[Error] Invalid currency: {currency}")
+Exception: [Error] Invalid currency: ASDA
+2025-10-09 16:13:07,565 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:15:39,188 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:15:39,189 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:15:39,190 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:15:54,067 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:15:54,068 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:15:54,068 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:16:01,879 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:16:01,880 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rateasds.json',)] - [{}]
+2025-10-09 16:16:01,880 - my_app - ERROR 	 logger.py 	 wrapper 	 28  File 'rateasds.json' not found.
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/file_util.py", line 7, in read_json_as_dict
+    with open(file_name) as f:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'rateasds.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/file_util.py", line 10, in read_json_as_dict
+    raise Exception(f"File '{file_name}' not found.")
+Exception: File 'rateasds.json' not found.
+2025-10-09 16:16:24,165 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:16:24,165 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rateasds.json',)] - [{}]
+2025-10-09 16:16:24,166 - my_app - ERROR 	 logger.py 	 wrapper 	 28  File 'rateasds.json' not found.
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/file_util.py", line 7, in read_json_as_dict
+    with open(file_name) as f:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'rateasds.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/file_util.py", line 11, in read_json_as_dict
+    raise Exception(f"File '{file_name}' not found.")
+Exception: File 'rateasds.json' not found.
+2025-10-09 16:17:00,477 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:17:00,477 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:17:00,478 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:19:25,316 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:19:25,316 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:19:25,316 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:20:40,225 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:20:40,226 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:20:40,227 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:21:25,160 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:21:25,160 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:21:25,161 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:21:48,633 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:21:48,633 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:21:48,634 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:21:59,273 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:21:59,275 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'usd', 'target': 'php', 'amount_to_be_converted': 1.0}]
+2025-10-09 16:21:59,276 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:21:59,276 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'usd', 'php', 1.0)] - [{}]
+2025-10-09 16:21:59,276 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert_amount
+2025-10-09 16:21:59,276 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:22:53,125 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:22:53,125 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'usd'}]
+2025-10-09 16:22:53,125 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:22:53,126 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'usd')] - [{}]
+2025-10-09 16:22:53,126 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: get_rates_data
+2025-10-09 16:22:53,126 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:23:26,100 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:23:26,100 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'php', 'target': 'jpy', 'amount_to_be_converted': 100.0}]
+2025-10-09 16:23:26,100 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:23:26,101 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'php', 'jpy', 100.0)] - [{}]
+2025-10-09 16:23:26,101 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert_amount
+2025-10-09 16:23:26,102 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:23:41,564 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:23:41,565 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'php'}]
+2025-10-09 16:23:41,565 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:23:41,566 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'php')] - [{}]
+2025-10-09 16:23:41,566 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: get_rates_data
+2025-10-09 16:23:41,567 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:24:34,421 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:24:34,421 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': '9'}]
+2025-10-09 16:24:34,421 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:24:34,421 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, '9')] - [{}]
+2025-10-09 16:24:34,422 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency '9' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 20, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency '9' not found in available rates
+2025-10-09 16:24:34,423 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:24:49,022 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:24:49,022 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'PHPs'}]
+2025-10-09 16:24:49,022 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:24:49,022 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'PHPs')] - [{}]
+2025-10-09 16:24:49,022 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency 'PHPS' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 20, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency 'PHPS' not found in available rates
+2025-10-09 16:24:49,023 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:25:05,945 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:25:05,946 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': '9', 'target': 'jpy', 'amount_to_be_converted': 100.0}]
+2025-10-09 16:25:05,946 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:25:05,946 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, '9', 'jpy', 100.0)] - [{}]
+2025-10-09 16:25:05,947 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency 9 not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 46, in convert_amount
+    source_rate = get_rate(source)
+                  ^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/dal/rates_dal.py", line 15, in get_currency_rate
+    raise Exception(f"Currency {currency} not found in available rates")
+Exception: Currency 9 not found in available rates
+2025-10-09 16:25:05,948 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:25:14,209 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:25:14,209 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'a', 'target': 'jpy', 'amount_to_be_converted': 100.0}]
+2025-10-09 16:25:14,209 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:25:14,209 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'a', 'jpy', 100.0)] - [{}]
+2025-10-09 16:25:14,209 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency A not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 46, in convert_amount
+    source_rate = get_rate(source)
+                  ^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/dal/rates_dal.py", line 15, in get_currency_rate
+    raise Exception(f"Currency {currency} not found in available rates")
+Exception: Currency A not found in available rates
+2025-10-09 16:25:14,210 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:25:42,705 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:25:42,705 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'UsD', 'target': 'PHp', 'amount_to_be_converted': 100.0}]
+2025-10-09 16:25:42,705 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:25:42,705 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'UsD', 'PHp', 100.0)] - [{}]
+2025-10-09 16:25:42,706 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert_amount
+2025-10-09 16:25:42,706 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:25:59,522 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:25:59,522 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'usd', 'target': 'PHp', 'amount_to_be_converted': -100.0}]
+2025-10-09 16:25:59,522 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:25:59,523 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'usd', 'PHp', -100.0)] - [{}]
+2025-10-09 16:25:59,523 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Amount must be greater than zero.
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 38, in convert_amount
+    raise ValueError("Amount must be greater than zero.")
+ValueError: Amount must be greater than zero.
+2025-10-09 16:25:59,523 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:26:17,973 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:26:17,974 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'usd', 'target': 'PHp', 'amount_to_be_converted': 0.0}]
+2025-10-09 16:26:17,974 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:26:17,977 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'usd', 'PHp', 0.0)] - [{}]
+2025-10-09 16:26:17,977 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Amount must be greater than zero.
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 38, in convert_amount
+    raise ValueError("Amount must be greater than zero.")
+ValueError: Amount must be greater than zero.
+2025-10-09 16:26:17,978 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:26:29,847 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:26:29,847 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'php', 'target': 'PHp', 'amount_to_be_converted': 1.0}]
+2025-10-09 16:26:29,847 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:26:29,847 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'php', 'PHp', 1.0)] - [{}]
+2025-10-09 16:26:29,848 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert_amount
+2025-10-09 16:26:29,848 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:26:45,594 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:26:45,594 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'usd', 'target': 'jpy', 'amount_to_be_converted': 1.0}]
+2025-10-09 16:26:45,595 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:26:45,595 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'usd', 'jpy', 1.0)] - [{}]
+2025-10-09 16:26:45,595 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert_amount
+2025-10-09 16:26:45,595 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:27:17,244 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:27:17,244 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'cnd', 'target': 'jpy', 'amount_to_be_converted': 1.0}]
+2025-10-09 16:27:17,245 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:27:17,245 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7b46ca1c3740>, 'cnd', 'jpy', 1.0)] - [{}]
+2025-10-09 16:27:17,246 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency CND not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 46, in convert_amount
+    source_rate = get_rate(source)
+                  ^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/dal/rates_dal.py", line 15, in get_currency_rate
+    raise Exception(f"Currency {currency} not found in available rates")
+Exception: Currency CND not found in available rates
+2025-10-09 16:27:17,249 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:28:22,220 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:28:22,220 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:28:22,221 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:28:30,598 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:28:30,599 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:28:30,599 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:28:53,502 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:28:53,503 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:28:53,503 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:29:19,731 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:29:19,731 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': ' '}]
+2025-10-09 16:29:19,731 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:29:19,732 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x74f2757aec60>, ' ')] - [{}]
+2025-10-09 16:29:19,732 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency ' ' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 20, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency ' ' not found in available rates
+2025-10-09 16:29:19,738 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:31:11,208 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:31:11,208 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'usd', 'target': 'php', 'amount_to_be_converted': -5.0}]
+2025-10-09 16:31:11,209 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:31:11,209 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x74f2757aec60>, 'usd', 'php', -5.0)] - [{}]
+2025-10-09 16:31:11,209 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Amount must be greater than zero.
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 38, in convert_amount
+    raise ValueError("Amount must be greater than zero.")
+ValueError: Amount must be greater than zero.
+2025-10-09 16:31:11,209 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 16:38:59,802 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:38:59,803 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:38:59,803 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:39:03,904 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:39:03,904 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:39:03,904 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:39:25,788 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:39:25,788 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'a'}]
+2025-10-09 16:39:25,788 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:39:25,788 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7f0212227aa0>, 'a')] - [{}]
+2025-10-09 16:39:25,788 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency 'A' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 20, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency 'A' not found in available rates
+2025-10-09 16:39:25,790 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:40:06,179 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:40:06,179 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:40:06,180 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:40:14,018 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:40:14,019 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:40:14,019 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:40:32,437 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:40:32,437 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:40:32,437 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:40:33,861 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:40:33,861 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:40:33,862 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:42:41,263 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:42:41,263 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'asd'}]
+2025-10-09 16:42:41,264 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:42:41,264 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x78d1223b2a50>, 'asd')] - [{}]
+2025-10-09 16:42:41,264 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency 'ASD' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 20, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency 'ASD' not found in available rates
+2025-10-09 16:42:41,266 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:43:45,681 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:43:45,681 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': '1'}]
+2025-10-09 16:43:45,681 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:43:45,681 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x78d1223b2a50>, '1')] - [{}]
+2025-10-09 16:43:45,682 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency '1' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 20, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency '1' not found in available rates
+2025-10-09 16:43:45,682 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:55:43,495 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 16:55:43,495 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 16:55:43,495 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 16:58:28,653 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:58:28,653 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'php'}]
+2025-10-09 16:58:28,653 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:58:28,653 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7d5c191237a0>, 'php')] - [{}]
+2025-10-09 16:58:28,654 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: get_rates_data
+2025-10-09 16:58:28,654 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:58:44,679 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:58:44,679 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'phppp'}]
+2025-10-09 16:58:44,679 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:58:44,680 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7d5c191237a0>, 'phppp')] - [{}]
+2025-10-09 16:58:44,680 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency 'PHPPP' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 20, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency 'PHPPP' not found in available rates
+2025-10-09 16:58:44,681 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:59:00,405 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:59:00,406 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'p'}]
+2025-10-09 16:59:00,406 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:59:00,406 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7d5c191237a0>, 'p')] - [{}]
+2025-10-09 16:59:00,406 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency 'P' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 20, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency 'P' not found in available rates
+2025-10-09 16:59:00,408 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:59:12,141 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 16:59:12,142 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'php'}]
+2025-10-09 16:59:12,142 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 16:59:12,142 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7d5c191237a0>, 'php')] - [{}]
+2025-10-09 16:59:12,143 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: get_rates_data
+2025-10-09 16:59:12,143 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 16:59:58,399 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 16:59:58,399 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'php', 'target': 'usd', 'amount_to_be_converted': -5.0}]
+2025-10-09 16:59:58,399 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 16:59:58,399 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7d5c191237a0>, 'php', 'usd', -5.0)] - [{}]
+2025-10-09 16:59:58,399 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Amount must be greater than zero.
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 38, in convert_amount
+    raise ValueError("Amount must be greater than zero.")
+ValueError: Amount must be greater than zero.
+2025-10-09 16:59:58,400 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 17:02:20,014 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 17:02:20,014 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'php', 'target': 'usd', 'amount_to_be_converted': 2.0}]
+2025-10-09 17:02:20,015 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 17:02:20,015 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7d5c191237a0>, 'php', 'usd', 2.0)] - [{}]
+2025-10-09 17:02:20,015 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert_amount
+2025-10-09 17:02:20,015 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert

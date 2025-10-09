@@ -1,0 +1,26 @@
+2025-10-09 14:06:42,232 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: 	 display_contacts
+2025-10-09 14:06:42,233 - my_app - INFO 	 logger.py 	 wrapper 	 30  Ending function 	 display_contacts
+2025-10-09 14:07:02,282 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: 	 display_contacts
+2025-10-09 14:07:02,283 - my_app - INFO 	 logger.py 	 wrapper 	 30  Ending function 	 display_contacts
+2025-10-09 14:08:21,374 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: 	 display_contacts
+2025-10-09 14:08:21,374 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function 	 display_contacts
+2025-10-09 14:17:35,110 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: 	 display_contacts
+2025-10-09 14:17:35,111 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function 	 display_contacts
+2025-10-09 14:20:09,005 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: 	 display_contacts
+2025-10-09 14:20:09,006 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: 	 retrieve_contacts
+2025-10-09 14:20:09,006 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.contacts_bll.ContactBll object at 0x7b327cc243b0>,)] - [{}]
+2025-10-09 14:20:09,007 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Error in business layer
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/api/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/api/bll/contacts_bll.py", line 15, in retrieve_contacts
+    raise Exception("Error in business layer")
+Exception: Error in business layer
+2025-10-09 14:20:09,008 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function 	 display_contacts
+2025-10-09 14:52:13,593 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: 	 search_contact
+2025-10-09 14:52:13,594 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'keyword': '12312'}]
+2025-10-09 14:52:13,594 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: 	 search_contact
+2025-10-09 14:52:13,594 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.contacts_bll.ContactBll object at 0x71b10084c3b0>, '12312')] - [{}]
+2025-10-09 14:52:13,594 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function 	 search_contact
+2025-10-09 14:52:13,594 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function 	 search_contact
