@@ -1,0 +1,15 @@
+2025-10-10 09:00:57,607 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-10 09:00:57,608 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('data.json',)] - [{}]
+2025-10-10 09:00:57,608 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-10 09:41:33,173 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-10 09:41:33,174 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('data.json',)] - [{}]
+2025-10-10 09:41:33,175 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-10 10:10:26,610 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-10 10:10:26,611 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('data.json',)] - [{}]
+2025-10-10 10:10:26,611 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-10 10:11:46,496 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-10 10:11:46,497 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('data.json',)] - [{}]
+2025-10-10 10:11:46,497 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-10 10:27:55,141 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-10 10:27:55,142 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('data.json',)] - [{}]
+2025-10-10 10:27:55,143 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict

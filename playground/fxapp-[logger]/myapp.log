@@ -565,3 +565,54 @@ ValueError: Amount must be greater than zero.
 2025-10-09 17:02:20,015 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x7d5c191237a0>, 'php', 'usd', 2.0)] - [{}]
 2025-10-09 17:02:20,015 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert_amount
 2025-10-09 17:02:20,015 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 17:26:15,340 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 17:26:15,341 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 17:26:15,341 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 17:26:39,298 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: read_json_as_dict
+2025-10-09 17:26:39,298 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [('rates.json',)] - [{}]
+2025-10-09 17:26:39,299 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: read_json_as_dict
+2025-10-09 17:26:53,694 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 17:26:53,695 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'asd'}]
+2025-10-09 17:26:53,696 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 17:26:53,696 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x711a7cfdbf50>, 'asd')] - [{}]
+2025-10-09 17:26:53,697 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency 'ASD' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 20, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency 'ASD' not found in available rates
+2025-10-09 17:26:53,699 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
+2025-10-09 17:27:11,503 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert
+2025-10-09 17:27:11,503 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'source': 'usd', 'target': 'php', 'amount_to_be_converted': -3.0}]
+2025-10-09 17:27:11,503 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: convert_amount
+2025-10-09 17:27:11,503 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x711a7cfdbf50>, 'usd', 'php', -3.0)] - [{}]
+2025-10-09 17:27:11,504 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Amount must be greater than zero.
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 38, in convert_amount
+    raise ValueError("Amount must be greater than zero.")
+ValueError: Amount must be greater than zero.
+2025-10-09 17:27:11,504 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: convert
+2025-10-09 17:55:42,420 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: retrieve_rates
+2025-10-09 17:55:42,420 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [()] - [{'base': 'asd'}]
+2025-10-09 17:55:42,421 - my_app - INFO 	 logger.py 	 wrapper 	 22  Starting function: get_rates_data
+2025-10-09 17:55:42,421 - my_app - INFO 	 logger.py 	 wrapper 	 24  Params: 	 [(<bll.rates_bll.RatesBll object at 0x711a7cfdbf50>, 'asd')] - [{}]
+2025-10-09 17:55:42,422 - my_app - ERROR 	 logger.py 	 wrapper 	 28  Currency 'ASD' not found in available rates
+Traceback (most recent call last):
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/util/logger.py", line 26, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 14, in get_rates_data
+    return self._convert_rates_to_base(self.__rate_dao.get_rates(), base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/citco/Desktop/python/playground/fxapp-[logger]/bll/rates_bll.py", line 20, in _convert_rates_to_base
+    raise ValueError(f"Currency '{new_base}' not found in available rates")
+ValueError: Currency 'ASD' not found in available rates
+2025-10-09 17:55:42,423 - my_app - INFO 	 logger.py 	 wrapper 	 31  Ending function: retrieve_rates
